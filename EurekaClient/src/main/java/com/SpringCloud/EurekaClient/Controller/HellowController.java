@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class HellowContrpller {
+public class HellowController {
 
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping(value = "index")
+    @RequestMapping(value = "/index")
     @ResponseBody
     public String index(){
         return "Hello World!,端口："+port;

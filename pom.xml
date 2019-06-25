@@ -13,6 +13,8 @@
         <module>EurekaServer</module>
         <module>EurekaClient</module>
         <module>EurekaGateWay</module>
+        <module>EurekaFeign</module>
+        <module>Config</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

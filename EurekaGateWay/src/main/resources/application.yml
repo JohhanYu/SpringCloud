@@ -8,8 +8,6 @@ spring:
       discovery:
         locator:
           enabled: true
-
-
 logging:
   level:
     org.springframework.cloud.gateway: trace
