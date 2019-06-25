@@ -11,6 +11,8 @@
 
     <modules>
         <module>EurekaServer</module>
+        <module>EurekaClient</module>
+        <module>EurekaGateWay</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
