@@ -9,9 +9,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JohhanYu/SpringCloud.git #配置git仓库地址
-          searchPaths: 第09课/config #配置仓库路径
-          username:  JohhanYu#访问git仓库的用户名
+          uri: https://github.com/JohhanYu/Config.git #配置git仓库地址
+          searchPaths:  #配置仓库路径
+          username:  JohhanYu     #访问git仓库的用户名
           password:  3208122@yyh #访问git仓库的用户密码
       label: master #配置仓库的分支
 eureka:

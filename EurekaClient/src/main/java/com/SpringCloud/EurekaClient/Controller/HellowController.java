@@ -1,19 +1,18 @@
 package com.SpringCloud.EurekaClient.Controller;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Controller;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RefreshScope
 public class HellowController {
 
     @Value("${server.port}")
-    private String port;
+    private int port;
 
-    @RequestMapping(value = "/index")
-    @ResponseBody
+    @RequestMapping("index")
     public String index(){
         return "Hello World!,端口："+port;
     }
